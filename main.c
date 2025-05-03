@@ -941,6 +941,7 @@ void fugir(){
     scanf(" %c",&escolha);
     if (escolha=='1')
     {
+        system("color 4f");
         printf("Voce se joga no chao e comeca a chorar, nunca sentiu tanta vergonha de si, toda aquela sede de aventuras ");
         printf("anos de sonhos...\nVoce queria apenas que sua vida deixasse de existir porem nao consegue nem cometer suicidio de quao inutil voce e.\nPelo resto de sua vida ira sofrer com esse peso?Parece que nao.\n\n");
         printf("O destino esta ao seu lado, um urso gigante te ataca e te estripa inteiro apenas por diversao.");
@@ -949,6 +950,7 @@ void fugir(){
     }
     else if(escolha=='2')
     {
+        system("color 4f");
         printf("Voce ignora toda a angustia que lhe abala e segue sua vida como se aquele dia nunca aconteceu.\n");
         printf("1 mes se passa desde o ocorrido, sua reputacao de medroso e fujao se espalhou \nnenhum aventureiro quer voce na equipe.");
         printf("Ja se faz 2 semanas que sua comida acabou, voce esta com muita fome porem sem trabalho nao tem comida.\n");
@@ -959,6 +961,7 @@ void fugir(){
     }
     else if(escolha=='3')
     {
+        system("color 4f");
         printf("Otima ideia, volte e lute como um verdadeiro aventureiro, sua mente nunca havia pensado em algo tao certo e honesto como isso.\n");
         printf("Rapidamente voce se vira, no mesmo instante uma gigantesca bola de fogo caindo em sua direcao... Sua vida de lixo passa diante de seus olhos, voce nunca deveria ter fugido.\n");
         printf("Sua morte foi a morte mais tosca de todas.\n\n");
@@ -967,6 +970,7 @@ void fugir(){
     }
     else if(escolha=='4')
     {
+        system("color 4f");
         printf("Por sorte do destino, voce se depara com uma corda jogada no pe de uma arvore\ninstitivamente seu corpo se move sozinho sabendo oque e preciso ser feito. Voce comete suicidio.\n\n");
         printf("FIM DE JOGO.\n\n\n\n\n\n\n\n");retorno();
     }
@@ -985,6 +989,7 @@ void esconder(){
 
     if(v4 == 1 || v4 == 3)
     {
+        system("color 4f");
         printf("Eu só queria... mais um pôr do sol... ao seu lado... \nvoce morreu\n\n\n");
         retorno();
     }
@@ -1013,7 +1018,8 @@ void nadahumano(){
 }
 
 void nadaanao(){
-    printf("Voce sente seu corpo paralisado e tremendo, o dragao se aproxima e bufa encima  de voce, o bafo dele fede a mil cadaveres\n");
+    system("color 4f");
+    printf("Voce sente seu corpo paralisado e tremendo, o dragao se aproxima e bufa encima  de voce,zn o bafo dele fede a mil cadaveres\n");
     printf(".___________________.\n");
     printf("|    VOCE MORREU    |\n");
     printf("|___________________|\n");
@@ -1022,6 +1028,7 @@ void nadaanao(){
 }
 
 void nadagigante(){
+    system("color 4f");
     printf("Voce sente seu corpo paralisado e prende a respiraçao, o dragao, aparentemente  uma femea, se aproxima e cheira voce, talvez seu cheiro a tenha agradado, ela o  agarra em um abraco e volta ao seu sono milenar\n");
     printf(".___________________.\n");
     printf("|    VOCE MORREU    |\n");
