@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1746232171 source:c:\users\rufou\onedrive\Área de trabalho\aula programação\jogo de texto\main.c
+	<stdio.h>
+	<windows.h>
+	<unistd.h>
+
