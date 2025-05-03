@@ -39,6 +39,7 @@ int main(){
 }
 
 void first(){
+    system("color 0f");
     int v1;
 
     printf("Voce acordou em um corpo e apos olhar seu reflexo na poca de agua voce viu:\n 1) Humano\n 2) Anao\n 3) Gigante\n 4) Elfo \n");
@@ -990,7 +991,7 @@ void esconder(){
     if(v4 == 1 || v4 == 3)
     {
         system("color 4f");
-        printf("Eu só queria... mais um pôr do sol... ao seu lado... \nvoce morreu\n\n\n");
+        printf("Eu so queria... mais um por do sol... ao seu lado... \nvoce morreu\n\n\n");
         retorno();
     }
     else
@@ -1047,7 +1048,7 @@ void nadaelfo(){
 }
 
 void retorno(){
-    sleep(15);
+    sleep(30);
     system("cls");
     first();
 }
