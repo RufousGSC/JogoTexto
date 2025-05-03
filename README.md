@@ -2,7 +2,7 @@
 Jogo texto RPG feito em sala Senai
 Alunos:
 1) Gabriel Souza Correia
-2) Crhistopher
+2) Christopher
 3) Will Dener
 4) Davi Rozeno
 5) Victor Oliveira
