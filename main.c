@@ -44,10 +44,17 @@ void first(){
 
     printf("Voce acordou em um corpo e apos olhar seu reflexo na poca de agua voce viu:\n 1) Humano\n 2) Anao\n 3) Gigante\n 4) Elfo \n");
     printf("Escolha um numero: ");
-    scanf("%d", &v1);
 
-    if (v1 == 1)
+    while(scanf("%d", &v1) != 1 && getchar() != '\n')
     {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        system("cls");
+        first();
+    }
+
+
+    if (v1 == 1){
         printf("Voce escolheu a raca Humano\n");
         humano();
     }
@@ -75,6 +82,8 @@ void first(){
                 else
                 {
                     printf("escolha apenas as alternativas\n");
+                    sleep(1);
+                    system("cls");
                     first();
                 }
             }
@@ -86,7 +95,13 @@ void humano(){
     int v2;
 
      printf("Escolha uma Classe:\n 1) Arqueiro \n 2) Assassino \n 3) Guerreiro \n 4) tanque \nEscolha um numero: ");
-     scanf ("%d",&v2);
+
+     while(scanf("%d", &v2) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        humano();
+    }
 
     if (v2 == 1)
     {
@@ -116,7 +131,8 @@ void humano(){
                 }
                 else
                 {
-                    printf("escolha apenas as alternativas");
+                    printf("escolha apenas as alternativas\n");
+                    sleep(1);
                     humano();
                 }
             }
@@ -129,8 +145,12 @@ void arqueiro(){
     int v3;
 
     printf("Um dragao esta atacando a cidade,o que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
-
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        arqueiro();
+    }
     if(v3 == 1)
     {
         printf("Seu arco possui uma flecha de fibra do coracao de um orc, um material capaz de perfurar as escamas do monstro a sua frente.\n");
@@ -160,6 +180,7 @@ void arqueiro(){
                 else
                 {
                     printf("Escolha apenas as alternativas");
+                    sleep(1);
                     arqueiro();
                 }
             }
@@ -171,7 +192,12 @@ void assassino(){
     int v3;
 
     printf("Um dragao esta atacando a cidade,o que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        assassino();
+    }
 
     if (v3 == 1)
     {
@@ -204,6 +230,7 @@ void assassino(){
                 else
                 {
                     printf("escolha apenas as alternativas");
+                    sleep(1);
                     assassino();
                 }
             }
@@ -216,7 +243,12 @@ void guerreiro(){
     int v3;
 
     printf("Um dragao esta atacando a cidade,o que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        guerreiro();
+    }
 
     if (v3 == 1)
     {
@@ -248,6 +280,7 @@ void guerreiro(){
                 else
                 {
                     printf("escolha apenas as alternativas");
+                    sleep(1);
                     guerreiro();
                 }
             }
@@ -259,7 +292,12 @@ void tank(){
     int v3;
 
     printf("Um dragao esta atacando a cidade,o que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        tank();
+    }
 
     if (v3 == 1)
     {
@@ -292,6 +330,7 @@ void tank(){
                 else
                 {
                     printf("escolha apenas as alternativas");
+                    sleep(1);
                     tank();
                 }
             }
@@ -303,7 +342,12 @@ void anao(){
     int v2;
 
     printf("Escolha a sua classe de anao: \n 1) Anao da Montanha \n 2) Anao Ferreiro \n 3) Anao da Floresta \n 4) Anao Covarde \nEscolha um Numero: ");
-    scanf ("%d",&v2);
+    while(scanf("%d", &v2) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        anao();
+    }
 
     if (v2 == 1)
     {
@@ -334,6 +378,7 @@ void anao(){
                 else
                 {
                     printf("escolha uma das Alternativas");
+                    sleep(1);
                     anao();
                 }
             }
@@ -345,7 +390,12 @@ void anaomontanha(){
     int v3;
 
     printf("Um dragao esta atacando a cidade,o que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        anaomontanha();
+    }
 
     if (v3 == 1)
     {
@@ -380,6 +430,7 @@ void anaomontanha(){
                 else
                 {
                     printf("escolha apenas as alternativas");
+                    sleep(1);
                     anaomontanha();
                 }
             }
@@ -391,7 +442,12 @@ void anaoferreiro(){
     int v3;
 
     printf("Um dragao esta atacando a cidade,o que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        anaoferreiro();
+    }
 
     if (v3 == 1)
     {
@@ -420,6 +476,7 @@ void anaoferreiro(){
                 else
                 {
                     printf("escolha apenas as alternativas");
+                    sleep(1);
                     anaoferreiro();
                 }
             }
@@ -431,7 +488,12 @@ void anaofloresta(){
     int v3;
 
     printf("Um dragao esta atacando a cidade,o que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        anaofloresta();
+    }
 
     if (v3 == 1)
     {
@@ -461,6 +523,7 @@ void anaofloresta(){
                 else
                 {
                     printf("escolha apenas as alternativas");
+                    sleep(1);
                     anaofloresta();
                 }
             }
@@ -472,7 +535,12 @@ void anaocovarde(){
     int v3;
 
     printf("Um dragao esta atacando a cidade,o que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        anaocovarde();
+    }
 
     if (v3 == 1)
     {
@@ -503,6 +571,7 @@ void anaocovarde(){
                 else
                 {
                     printf("escolha apenas as alternativas");
+                    sleep(1);
                     anaocovarde();
                 }
             }
@@ -514,7 +583,12 @@ void gigante(){
     int v2;
 
     printf("Escolha a sua classe de gigante\n 1) Gigante Pequeno\n 2) Gigante de Terra\n 3) Gigante de Pedra\n 4) Gigante Normal\nEscolha um Numero: ");
-    scanf ("%d",&v2);
+    while(scanf("%d", &v2) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        gigante();
+    }
 
     if (v2 == 1)
     {
@@ -549,6 +623,7 @@ void gigante(){
                 else
                 {
                     printf("escolha uma das Alternativas");
+                    sleep(1);
                     gigante();
                 }
             }
@@ -560,7 +635,12 @@ void gigantepequeno(){
     int v3;
 
     printf("Um dragao esta atacando a cidade,o que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        gigantepequeno();
+    }
 
     if (v3 == 1)
     {
@@ -591,6 +671,7 @@ void gigantepequeno(){
                 else
                 {
                     printf("escolha apenas as alternativas");
+                    sleep(1);
                     gigantepequeno();
                 }
             }
@@ -603,7 +684,12 @@ void giganteterra(){
 
     printf("Um Dragao se aproxima calmamente,\nUtilizando os seus poderes lhe ajuda a controlar sua ira\nCom a mente clara, voce e o dragao ajudam as cidadaes proximas a floresta contra as forcas do mal\n");
     printf("Lutando contras as forcas do mal voce se encontra encuralhado\no que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        giganteterra();
+    }
 
     if (v3 == 1)
     {
@@ -631,6 +717,7 @@ void giganteterra(){
                 else
                 {
                     printf("escolha apenas as alternativas");
+                    sleep(1);
                     giganteterra();
                 }
             }
@@ -644,7 +731,12 @@ void gigantepedra(){
     printf("O ceu escurece enquanto o dragao surge, cuspindo chamas sobre a floresta.\n");
     printf("O Gigante de Pedra ergue-se das montanhas, com passos que fazem a terra tremer.\n");
     printf("Escolha as opcoes\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        gigantepedra();
+    }
 
     if (v3 == 1)
     {
@@ -678,6 +770,7 @@ void gigantepedra(){
                 else
                 {
                     printf("escolha apenas as alternativas");
+                    sleep(1);
                     gigantepedra();
                 }
             }
@@ -689,7 +782,12 @@ void gigantenormal(){
     int v3;
 
     printf("Um dragao esta atacando a planicie onde voce vive,o que voce faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        gigantenormal();
+    }
 
     if (v3 == 1)
     {
@@ -720,6 +818,7 @@ void gigantenormal(){
                 else
                 {
                     printf("escolha apenas as alternativas");
+                    sleep(1);
                     gigantenormal();
                 }
             }
@@ -731,7 +830,12 @@ void elfo(){
 int v2;
 
     printf("Voce escolheu Elfo\n1) Elfo Arqueiro\n2) Elfo Necromante\n3) Elfo Ferreiro\n4) Elfo da Floresta\nEscolha sua classe de elfo: ");
-    scanf ("%d",&v2);
+    while(scanf("%d", &v2) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        elfo();
+    }
 
     if (v2 == 1)
     {
@@ -762,6 +866,7 @@ int v2;
                 else
                 {
                     printf("escolha uma das Alternativas");
+                    sleep(1);
                     elfo();
                 }
             }
@@ -773,7 +878,12 @@ void elfoarqueiro(){
     int v3;
 
     printf("Um dragao esta atacando a cidade,o que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        elfoarqueiro();
+    }
 
     if(v3 == 1)
     {
@@ -802,6 +912,7 @@ void elfoarqueiro(){
                 else
                 {
                     printf("Escolha apenas as alternativas");
+                    sleep(1);
                     elfoarqueiro();
                 }
             }
@@ -813,7 +924,12 @@ void elfonecromante(){
     int v3;
 
     printf("Um dragao esta atacando a cidade,o que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        elfonecromante();
+    }
 
     if(v3 == 1)
     {
@@ -842,6 +958,7 @@ void elfonecromante(){
                 else
                 {
                     printf("Escolha apenas as alternativas");
+                    sleep(1);
                     elfonecromante();
                 }
             }
@@ -853,7 +970,12 @@ void elfoferreiro(){
     int v3;
 
     printf("Um dragao esta atacando a cidade,o que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        elfoferreiro();
+    }
 
     if(v3 == 1)
     {
@@ -883,6 +1005,7 @@ void elfoferreiro(){
                 else
                 {
                     printf("Escolha apenas as alternativas");
+                    sleep(1);
                     elfoferreiro();
                 }
             }
@@ -894,7 +1017,12 @@ void elfofloresta(){
     int v3;
 
     printf("Um dragao esta atacando a cidade,o que voce  faz?\n 1) lutar\n 2) fugir\n 3) se esconder\n 4) fazer nada\nEscolha um Numero: ");
-    scanf("%d",&v3);
+    while(scanf("%d", &v3) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        elfofloresta();
+    }
 
     if(v3 == 1)
     {
@@ -923,6 +1051,7 @@ void elfofloresta(){
                 else
                 {
                     printf("Escolha apenas as alternativas");
+                    sleep(1);
                     elfofloresta();
                 }
             }
@@ -940,6 +1069,7 @@ void fugir(){
     printf("Oque voce quer fazer?\n");
     printf("1-Deitar e chorar.\n2-Ignorar seus sentimentos.\n3-Voltar e lutar.\n4-Final ''feliz'' \nEscolha uma alternativa: ");
     scanf(" %c",&escolha);
+
     if (escolha=='1')
     {
         system("color 4f");
@@ -975,9 +1105,10 @@ void fugir(){
         printf("Por sorte do destino, voce se depara com uma corda jogada no pe de uma arvore\ninstitivamente seu corpo se move sozinho sabendo oque e preciso ser feito. Voce comete suicidio.\n\n");
         printf("FIM DE JOGO.\n\n\n\n\n\n\n\n");retorno();
     }
-    else if(escolha>'4' || escolha=='0')
+    else if(escolha>'4' || escolha<'0')
     {
         printf("Opcao invalida!\n\n\n");
+        sleep(1);
         fugir();
     }
 }
@@ -986,7 +1117,12 @@ void esconder(){
     int v4;
 
     printf("onde voce se esconde? \n1) dentro de uma carroca \n2) em uma taverna \n3) atras de uma rocha \n4) dentro de um bueiro, no esgoto \nEscolha uma opcao: ");
-    scanf("%d",&v4);
+    while(scanf("%d", &v4) != 1 && getchar() != '\n')
+    {
+        printf("\nComando Invalido, Aguarde para Digitar Novamente!\n");
+        sleep(1);
+        esconder();
+    }
 
     if(v4 == 1 || v4 == 3)
     {
@@ -1004,6 +1140,7 @@ void esconder(){
         else
         {
             printf("\nescolha apenas uma das alternativas");
+            sleep(1);
             esconder();
         }
     }
